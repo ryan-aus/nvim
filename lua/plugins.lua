@@ -25,8 +25,8 @@ require'lspconfig'.elixirls.setup{
 	on_attach = require'completion'.on_attach;
 }
 
-require'nvim-treesitter.configs'.setup {
-	ensure_install = "maintained",
+require'nvim-treesitter.configs'.setup{
+	ensure_installed = "maintained",
 	highlight = {
 		enable = true,
 		additional_vim_regex_highlights = false
