@@ -20,6 +20,8 @@ end)
 vim.o.completeopt = "menuone,noselect"
 vim.g.completion_enable_snippet = 'UltiSnips'
 
+require'nvim-tree'.setup {}
+
 require'lspconfig'.elixirls.setup{
 	cmd = { "/Users/lebronse/source/elixir/elixir-ls/language_server.sh" };
 	on_attach = require'completion'.on_attach;
